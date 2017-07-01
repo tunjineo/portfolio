@@ -1,0 +1,73 @@
+html
+head
+    title Daden
+    | &#x9;
+    meta(charset='utf-8')
+    | &#x9;
+    meta(name='viewport', content='width=device-width, intial-scale = 1.0')
+    | &#x9;
+    link(href='/stylesheets/bootstrap.css', rel='stylesheet')
+    | &#x9;
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    nav.navbar.navbar-default.navbar-static-top.navbar-inverse.no-margin(role='navigation')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-wdm-navbar-collapse-1', aria-expanded='false')
+            span.sr-only Toggle navigation
+            | &#x9;    
+            span.icon-bar
+            | &#x9;    
+            span.icon-bar
+            | &#x9;    
+            span.icon-bar
+            | &#x9;    
+            span.icon-bar
+          | &#x9;    
+          a.navbar-brand(href='#') Daden
+        | &#x9;
+        #bs-wdm-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/') Home
+            | &#x9;&#x9;&#x9;
+            li
+              a(href='/about') About
+            | &#x9;&#x9;&#x9;
+            li
+              a(href='/blog') Blog
+            | &#x9;&#x9;&#x9;
+            li
+              a(href='/contact') Contact
+     .container
+      .page-header
+        img.img-responsive(src='/images/img/node.jpg', border='0')
+
+    block content  
+    footer.site-footer
+      .container
+        .row
+          p
+        | &#x9;
+        .bottom-footer
+          .col-md-5  &amp;copy Copyright WebDev 2017
+          | &#x9;&#x9;
+          .col-md-7
+            ul.footer-nav
+              li
+                a(href='/') Home
+              | &#x9;&#x9;&#x9;
+              li
+                a(href='/about') About
+              | &#x9;&#x9;&#x9;
+              li
+                a(href='/blog') Blog
+              | &#x9;&#x9;&#x9;
+              li
+                a(href='/contact') Contact
+
+
+    | &#x9;
+    | &#x9;
+    script(src='js/jquery.js')
+    | &#x9;
+    script(src='js/bootstrap.min.js')
